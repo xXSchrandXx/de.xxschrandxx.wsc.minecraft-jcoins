@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/5.4/option.xsd">
+	<import>
+		<categories>
+			<category name="minecraft_jcoins">
+				<parent>minecraft</parent>
+			</category>
+			<category name="minecraft_jcoins_general">
+				<parent>minecraft_jcoins</parent>
+			</category>
+		</categories>
+		<options>
+			<option name="minecraft_jcoins_enabled">
+				<categoryname>minecraft_jcoins_general</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>0</defaultvalue>
+				<enableoptions>minecraft_jcoins_key,minecraft_jcoins_floodgate_resettime,minecraft_jcoins_floodgate_maxrequests</enableoptions>
+			</option>
+			<option name="minecraft_jcoins_key">
+				<categoryname>minecraft_jcoins_general</categoryname>
+				<optiontype>text</optiontype>
+				<validationpattern>^(\S{12,})?$</validationpattern>
+			</option>
+			<option name="minecraft_jcoins_floodgate_resettime">
+				<categoryname>minecraft_jcoins_general</categoryname>
+				<optiontype>integer</optiontype>
+				<defaultvalue>10</defaultvalue>
+				<suffix>minutes</suffix>
+			</option>
+			<option name="minecraft_jcoins_floodgate_maxrequests">
+				<categoryname>minecraft_jcoins_general</categoryname>
+				<optiontype>integer</optiontype>
+				<defaultvalue>600</defaultvalue>
+			</option>
+		</options>
+	</import>
+</data>

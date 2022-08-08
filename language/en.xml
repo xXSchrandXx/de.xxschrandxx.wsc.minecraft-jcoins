@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/5.4/language.xsd" languagecode="en">
+	<category name="wcf.acp.option">
+		<item name="wcf.acp.option.category.minecraft_jcoins"><![CDATA[Minecraft-JCoins]]></item>
+		<item name="wcf.acp.option.category.minecraft_jcoins_general"><![CDATA[General Settings]]></item>
+		<item name="wcf.acp.option.minecraft_jcoins_enabled"><![CDATA[Activate Minecraft-JCoins]]></item>
+		<item name="wcf.acp.option.minecraft_jcoins_enabled.description"><![CDATA[Enables the action for <a href="https://www.spigotmc.org/resources/TODO/">WSC-Minecraft-JCoins</a>.
+ATTENTION! Sensitive data will be sent. Activate this option ONLY if you want to use the spigot plugin!
+Please use the following address as the URL in the WSC-Minecraft-JCoins configuration:
+<kbd>{link controller='MinecraftJCoinsModify' forceFrontend=true}{/link}</kbd>.]]></item>
+		<item name="wcf.acp.option.minecraft_jcoins_key"><![CDATA[Key]]></item>
+		<item name="wcf.acp.option.minecraft_jcoins_key.description"><![CDATA[Key out of WSC-Minecraft-JCoins Configuration. Minimum length: 12]]></item>
+		<item name="wcf.acp.option.minecraft_jcoins_floodgate_resettime"><![CDATA[Reset time]]></item>
+		<item name="wcf.acp.option.minecraft_jcoins_floodgate_maxrequests"><![CDATA[Max requests]]></item>
+		<item name="wcf.acp.option.minecraft_jcoins_floodgate_maxrequests.description"><![CDATA[Set <code>-1</code> to disable.]]></item>
+	</category>
+	<category name="wcf.jcoins.statement">
+		<item name="wcf.jcoins.statement.category.de.xxschrandxx.wsc.minecraftJCoins"><![CDATA[Minecraft]]></item>
+		<item name="wcf.jcoins.statement.title.de.xxschrandxx.wsc.minecraftJCoins.modify"><![CDATA[Minecraft-{JCOINS_NAME}]]></item>
+		<item name="wcf.jcoins.statement.reason.de.xxschrandxx.wsc.minecraftJCoins.modify"><![CDATA[Minecraft-{JCOINS_NAME} Modifikation.]]></item>
+		<item name="wcf.jcoins.statement.title.de.xxschrandxx.wsc.minecraftJCoins.link"><![CDATA[Minecraft account linked]]></item>
+		<item name="wcf.jcoins.statement.reason.de.xxschrandxx.wsc.minecraftJCoins.link"><![CDATA[You have linked with a Minecraft account.]]></item>
+	</category>
+</language>
