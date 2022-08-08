@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="https://www.woltlab.com"
+	xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.woltlab.com https://www.woltlab.com/XSD/5.5/eventListener.xsd">
+	<import>
+		<eventlistener name="minecraftJCoinsTrophy">
+			<eventclassname>wcf\data\user\minecraft\MinecraftUserAction</eventclassname>
+			<eventname>finalizeAction</eventname>
+			<environment>all</environment>
+			<listenerclassname>wcf\system\event\listener\MinecraftJCoinsMinecraftLinkerListener</listenerclassname>
+		</eventlistener>
+	</import>
+</data>

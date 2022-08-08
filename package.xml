@@ -29,6 +29,7 @@
 	</excludedpackages>
 
 	<instructions type="install">
+		<instruction type="eventListener"/>
 		<instruction type="file"/>
 		<instruction type="language"/>
 		<instruction type="objectType"/>

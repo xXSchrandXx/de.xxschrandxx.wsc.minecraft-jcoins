@@ -18,6 +18,7 @@
 		<type>
 			<name>de.xxschrandxx.wsc.minecraftJCoins.link</name>
 			<definitionname>de.wcflabs.jcoins.statement.object</definitionname>
+			<defaultAmount>5</defaultAmount>
 			<classname>\wcf\system\jcoins\statement\DefaultJCoinsStatement</classname>
 			<objectClassName>\wcf\data\user\User</objectClassName>
 			<categoryname>de.xxschrandxx.wsc.minecraftJCoins</categoryname>
