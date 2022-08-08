@@ -30,20 +30,24 @@ class MinecraftJCoinsMinecraftLinkerListener implements IParameterizedEventListe
             $minecraftUser = $eventObj->getParameters()['data'];
             $userID = $minecraftUser['userID'];
             $user = new User($userID);
+            if (!$user) {
+                return;
+            }
+            if ($user->minecraftUUIDs == 1) {
+                UserJCoinsStatementHandler::getInstance()->create('de.xxschrandxx.wsc.minecraftJCoins.link', $user);
+            }
         } else if ($action == 'delete') {
             foreach ($eventObj->getObjects() as $object) {
                 /** @var MinecraftUser */
                 $minecraftUser = $object->getDecoratedObject();
                 $user = new User($minecraftUser->userID);
+                if (!$user) {
+                    continue;
+                }
+                if ($user->minecraftUUIDs == 0) {
+                    UserJCoinsStatementHandler::getInstance()->revoke('de.xxschrandxx.wsc.minecraftJCoins.link', $user);
+                }
             }
-        }
-        if (!$user) {
-            return;
-        }
-        if ($user->minecraftUUIDs > 0) {
-            UserJCoinsStatementHandler::getInstance()->create('de.xxschrandxx.wsc.minecraftJCoins.link', $user);
-        } else {
-            UserJCoinsStatementHandler::getInstance()->revoke('de.xxschrandxx.wsc.minecraftJCoins.link', $user);
         }
     }
 }
