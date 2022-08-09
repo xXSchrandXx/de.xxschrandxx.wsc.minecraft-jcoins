@@ -21,5 +21,6 @@ Als URL in der WSC-Minecraft-JCoins Konfiguration nutzen Sie bitte folgende Addr
 		<item name="wcf.jcoins.statement.reason.de.xxschrandxx.wsc.minecraftJCoins.modify"><![CDATA[Minecraft-{JCOINS_NAME} Modifikation.]]></item>
 		<item name="wcf.jcoins.statement.title.de.xxschrandxx.wsc.minecraftJCoins.link"><![CDATA[Minecraft Konto verknüpft]]></item>
 		<item name="wcf.jcoins.statement.reason.de.xxschrandxx.wsc.minecraftJCoins.link"><![CDATA[{if LANGUAGE_USE_INFORMAL_VARIANT}Du hast dich mit einem{else}Sie haben sich mit einem{/if} Minecraft Konto verknüpft.]]></item>
+		<item name="wcf.jcoins.statement.reason.reverse.de.xxschrandxx.wsc.minecraftJCoins.link"><![CDATA[{if LANGUAGE_USE_INFORMAL_VARIANT}Du hast{else}Sie haben{/if} kein Minecraft Konto mehr verknüpft.]]></item>
 	</category>
 </language>

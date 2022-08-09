@@ -21,5 +21,6 @@ Please use the following address as the URL in the WSC-Minecraft-JCoins configur
 		<item name="wcf.jcoins.statement.reason.de.xxschrandxx.wsc.minecraftJCoins.modify"><![CDATA[Minecraft-{JCOINS_NAME} Modifikation.]]></item>
 		<item name="wcf.jcoins.statement.title.de.xxschrandxx.wsc.minecraftJCoins.link"><![CDATA[Minecraft account linked]]></item>
 		<item name="wcf.jcoins.statement.reason.de.xxschrandxx.wsc.minecraftJCoins.link"><![CDATA[You have linked with a Minecraft account.]]></item>
+		<item name="wcf.jcoins.statement.reason.reverse.de.xxschrandxx.wsc.minecraftJCoins.link"><![CDATA[You no longer have a Minecraft account linked.]]></item>
 	</category>
 </language>
