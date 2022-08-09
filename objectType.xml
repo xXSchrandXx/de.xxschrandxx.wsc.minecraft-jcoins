@@ -13,7 +13,7 @@
 			<classname>\wcf\system\jcoins\statement\DefaultJCoinsStatement</classname>
 			<editable>0</editable>
 			<objectClassName>\wcf\data\user\User</objectClassName>
-			<categoryname>de.xxschrandxx.wsc.minecraftJCoins</categoryname>
+			<category>de.xxschrandxx.wsc.minecraftJCoins</category>
 		</type>
 		<type>
 			<name>de.xxschrandxx.wsc.minecraftJCoins.link</name>
@@ -21,7 +21,7 @@
 			<defaultAmount>5</defaultAmount>
 			<classname>\wcf\system\jcoins\statement\DefaultJCoinsStatement</classname>
 			<objectClassName>\wcf\data\user\User</objectClassName>
-			<categoryname>de.xxschrandxx.wsc.minecraftJCoins</categoryname>
+			<category>de.xxschrandxx.wsc.minecraftJCoins</category>
 		</type>
 	</import>
 </data>
