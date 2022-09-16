@@ -9,7 +9,7 @@
 		<packagedescription language="de">
 			<![CDATA[JCoins-Teil vom Minecraft-Linker.]]>
 		</packagedescription>
-		<version>1.0.0</version>
+		<version>1.1.0 dev 1</version>
 		<date>2022-08-17</date>
 	</packageinformation>
 
@@ -19,13 +19,13 @@
 
 	<requiredpackages>
 		<requiredpackage minversion="5.5.0 RC 1">com.woltlab.wcf</requiredpackage>
-		<requiredpackage minversion="2.0.0">de.xxschrandxx.wsc.minecraft-linker</requiredpackage>
+		<requiredpackage minversion="3.0.0 dev 1">de.xxschrandxx.wsc.minecraft-linker</requiredpackage>
 		<requiredpackage minversion="5.5.2">de.wcflabs.wcf.jcoins</requiredpackage>
 	</requiredpackages>
 
 	<excludedpackages>
 		<excludedpackage version="6.0.0 Alpha 1">com.woltlab.wcf</excludedpackage>
-		<excludedpackage version="3.0.0">de.xxschrardxx.wsc.minecraft-linker</excludedpackage>
+		<excludedpackage version="4.0.0">de.xxschrardxx.wsc.minecraft-linker</excludedpackage>
 	</excludedpackages>
 
 	<instructions type="install">

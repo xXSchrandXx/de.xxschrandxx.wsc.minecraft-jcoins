@@ -3,10 +3,8 @@
 namespace wcf\system\event\listener;
 
 use wcf\data\user\minecraft\MinecraftUser;
-use wcf\data\user\minecraft\MinecraftUserList;
 use wcf\data\user\User;
 use wcf\system\user\jcoins\UserJCoinsStatementHandler;
-use wcf\system\WCF;
 
 /**
  * MinecraftUser acp edit listener class

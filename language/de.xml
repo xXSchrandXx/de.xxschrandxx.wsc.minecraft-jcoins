@@ -5,15 +5,8 @@
 		<item name="wcf.acp.option.category.minecraft_jcoins"><![CDATA[Minecraft-JCoins]]></item>
 		<item name="wcf.acp.option.category.minecraft_jcoins_general"><![CDATA[Allgemeine Einstellungen]]></item>
 		<item name="wcf.acp.option.minecraft_jcoins_enabled"><![CDATA[Minecraft-JCoins aktivieren]]></item>
-		<item name="wcf.acp.option.minecraft_jcoins_enabled.description"><![CDATA[Aktiviert die Aktion für <a href="https://www.spigotmc.org/resources/TODO/">WSC-Minecraft-JCoins</a>.
-ACHTUNG! Es werden sensible Daten verschickt. Aktiviere diese option NUR wenn du das Spigot-Plugin benutzen möchtest!
-Als URL in der WSC-Minecraft-JCoins Konfiguration nutzen Sie bitte folgende Addresse:
-<kbd>{link controller='MinecraftJCoinsModify' forceFrontend=true}{/link}</kbd>.]]></item>
-		<item name="wcf.acp.option.minecraft_jcoins_key"><![CDATA[Schlüssel]]></item>
-		<item name="wcf.acp.option.minecraft_jcoins_key.description"><![CDATA[Schlüssel aus der WSC-Minecraft-JCoins Konfiguration. Mindestlänge: 12]]></item>
-		<item name="wcf.acp.option.minecraft_jcoins_floodgate_resettime"><![CDATA[Resetzeit]]></item>
-		<item name="wcf.acp.option.minecraft_jcoins_floodgate_maxrequests"><![CDATA[Maximale Anfragen]]></item>
-		<item name="wcf.acp.option.minecraft_jcoins_floodgate_maxrequests.description"><![CDATA[Setze <code>-1</code> zum deaktivieren.]]></item>
+		<item name="wcf.acp.option.minecraft_jcoins_enabled.description"><![CDATA[<p>Aktiviert / Deaktiviert Minecraft-JCoins.</p>
+<p>Links für Plugin-Konfiguration: <kbd>{link controller='MinecraftJCoinsModify' forceFrontend=true}{/link}</kbd></p>]]></item>
 	</category>
 	<category name="wcf.jcoins.statement">
 		<item name="wcf.jcoins.statement.category.de.xxschrandxx.wsc.minecraftJCoins"><![CDATA[Minecraft]]></item>

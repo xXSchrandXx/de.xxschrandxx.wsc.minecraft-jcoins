@@ -3,11 +3,6 @@
 	xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/5.4/objectType.xsd">
 	<import>
 		<type>
-			<name>de.xxschrandxx.wsc.minecraftJCoins.verify</name>
-			<definitionname>com.woltlab.wcf.floodControl</definitionname>
-			<categoryname>de.xxschrandxx.wsc.minecraftJCoins</categoryname>
-		</type>
-		<type>
 			<name>de.xxschrandxx.wsc.minecraftJCoins.modify</name>
 			<definitionname>de.wcflabs.jcoins.statement.object</definitionname>
 			<classname>\wcf\system\jcoins\statement\DefaultJCoinsStatement</classname>
