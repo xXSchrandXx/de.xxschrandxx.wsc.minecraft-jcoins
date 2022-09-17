@@ -6,11 +6,9 @@
 		<packagename><![CDATA[Minecraft-JCoins]]></packagename>
 		<packagename language="de"><![CDATA[Minecraft-JCoins]]></packagename>
 		<packagedescription><![CDATA[JCoins part of the Minecraft linker.]]></packagedescription>
-		<packagedescription language="de">
-			<![CDATA[JCoins-Teil vom Minecraft-Linker.]]>
-		</packagedescription>
-		<version>1.1.0 dev 1</version>
-		<date>2022-08-17</date>
+		<packagedescription language="de"><![CDATA[JCoins-Teil vom Minecraft-Linker.]]></packagedescription>
+		<version>1.1.0</version>
+		<date>2022-09-17</date>
 	</packageinformation>
 
 	<authorinformation>
