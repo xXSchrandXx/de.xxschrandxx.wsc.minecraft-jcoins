@@ -2,11 +2,17 @@
 <data xmlns="https://www.woltlab.com"
 	xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.woltlab.com https://www.woltlab.com/XSD/5.5/eventListener.xsd">
 	<import>
-		<eventlistener name="minecraftJCoinsTrophy">
-			<eventclassname>wcf\data\user\minecraft\MinecraftUserAction</eventclassname>
+		<eventlistener name="minecraftJCoinsAdd">
+			<eventclassname>wcf\data\user\minecraft\UserToMinecraftUserAction</eventclassname>
 			<eventname>finalizeAction</eventname>
 			<environment>all</environment>
-			<listenerclassname>wcf\system\event\listener\MinecraftJCoinsMinecraftLinkerListener</listenerclassname>
+			<listenerclassname>wcf\system\event\listener\MinecraftJCoinsAddMinecraftLinkerListener</listenerclassname>
+		</eventlistener>
+		<eventlistener name="minecraftJCoinsRemove">
+			<eventclassname>wcf\data\user\minecraft\MinecraftUserAction</eventclassname>
+			<eventname>validateAction</eventname>
+			<environment>all</environment>
+			<listenerclassname>wcf\system\event\listener\MinecraftJCoinsRemoveMinecraftLinkerListener</listenerclassname>
 		</eventlistener>
 	</import>
 </data>

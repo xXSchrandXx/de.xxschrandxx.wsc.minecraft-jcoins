@@ -11,9 +11,17 @@
 			<category>de.xxschrandxx.wsc.minecraftJCoins</category>
 		</type>
 		<type>
-			<name>de.xxschrandxx.wsc.minecraftJCoins.link</name>
+			<name>de.xxschrandxx.wsc.minecraftJCoins.link.add</name>
 			<definitionname>de.wcflabs.jcoins.statement.object</definitionname>
 			<defaultAmount>5</defaultAmount>
+			<classname>\wcf\system\jcoins\statement\DefaultJCoinsStatement</classname>
+			<objectClassName>\wcf\data\user\User</objectClassName>
+			<category>de.xxschrandxx.wsc.minecraftJCoins</category>
+		</type>
+		<type>
+			<name>de.xxschrandxx.wsc.minecraftJCoins.link.remove</name>
+			<definitionname>de.wcflabs.jcoins.statement.object</definitionname>
+			<defaultAmount>-5</defaultAmount>
 			<classname>\wcf\system\jcoins\statement\DefaultJCoinsStatement</classname>
 			<objectClassName>\wcf\data\user\User</objectClassName>
 			<category>de.xxschrandxx.wsc.minecraftJCoins</category>

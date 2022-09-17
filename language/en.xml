@@ -12,8 +12,9 @@
 		<item name="wcf.jcoins.statement.category.de.xxschrandxx.wsc.minecraftJCoins"><![CDATA[Minecraft]]></item>
 		<item name="wcf.jcoins.statement.title.de.xxschrandxx.wsc.minecraftJCoins.modify"><![CDATA[Minecraft-{JCOINS_NAME}]]></item>
 		<item name="wcf.jcoins.statement.reason.de.xxschrandxx.wsc.minecraftJCoins.modify"><![CDATA[Minecraft-{JCOINS_NAME} Modifikation.]]></item>
-		<item name="wcf.jcoins.statement.title.de.xxschrandxx.wsc.minecraftJCoins.link"><![CDATA[Minecraft account linked]]></item>
-		<item name="wcf.jcoins.statement.reason.de.xxschrandxx.wsc.minecraftJCoins.link"><![CDATA[You have linked with a Minecraft account.]]></item>
-		<item name="wcf.jcoins.statement.reason.reverse.de.xxschrandxx.wsc.minecraftJCoins.link"><![CDATA[You no longer have a Minecraft account linked.]]></item>
+		<item name="wcf.jcoins.statement.title.de.xxschrandxx.wsc.minecraftJCoins.link.add"><![CDATA[Minecraft account linked]]></item>
+		<item name="wcf.jcoins.statement.reason.de.xxschrandxx.wsc.minecraftJCoins.link.add"><![CDATA[You have linked with a Minecraft account.]]></item>
+		<item name="wcf.jcoins.statement.title.de.xxschrandxx.wsc.minecraftJCoins.link.remove"><![CDATA[Minecraft account unlinked]]></item>
+		<item name="wcf.jcoins.statement.reason.de.xxschrandxx.wsc.minecraftJCoins.link.remove"><![CDATA[You no longer have a Minecraft account linked.]]></item>
 	</category>
 </language>
