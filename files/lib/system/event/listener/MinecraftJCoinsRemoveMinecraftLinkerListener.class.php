@@ -25,7 +25,7 @@ class MinecraftJCoinsRemoveMinecraftLinkerListener implements IParameterizedEven
             return;
         }
         $action = $eventObj->getActionName();
-         if ($action == 'delete') {
+        if ($action == 'delete') {
             foreach ($eventObj->getObjects() as $object) {
                 /** @var \wcf\data\user\minecraft\MinecraftUser */
                 $minecraftUser = $object->getDecoratedObject();
