@@ -6,7 +6,6 @@ use Laminas\Diactoros\Response\JsonResponse;
 use wcf\data\user\UserProfile;
 use wcf\system\user\jcoins\UserJCoinsStatementHandler;
 use wcf\util\MinecraftLinkerUtil;
-use wcf\util\StringUtil;
 
 /**
  * MinecraftJCoinsModifyAction action class
@@ -29,9 +28,6 @@ class MinecraftJCoinsModifyAction extends AbstractMinecraftLinkerAction
      */
     public function readParameters(): ?JsonResponse
     {
-        // check if minecraftLinker for server enabled
-        $this->availableMinecraftIDs = explode("\n", StringUtil::unifyNewlines(MINECRAFT_LINKER_IDENTITY));
-
         $result = parent::readParameters();
 
         // validate amount
