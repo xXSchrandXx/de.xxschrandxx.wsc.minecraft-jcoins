@@ -17,7 +17,7 @@
 
 	<requiredpackages>
 		<requiredpackage minversion="5.5.0 RC 1">com.woltlab.wcf</requiredpackage>
-		<requiredpackage minversion="3.0.0 dev 1">de.xxschrandxx.wsc.minecraft-linker</requiredpackage>
+		<requiredpackage minversion="3.0.2 dev 1">de.xxschrandxx.wsc.minecraft-linker</requiredpackage>
 		<requiredpackage minversion="5.5.2">de.wcflabs.wcf.jcoins</requiredpackage>
 	</requiredpackages>
 
@@ -25,6 +25,10 @@
 		<excludedpackage version="6.0.0 Alpha 1">com.woltlab.wcf</excludedpackage>
 		<excludedpackage version="4.0.0">de.xxschrardxx.wsc.minecraft-linker</excludedpackage>
 	</excludedpackages>
+
+	<instructions type="update" fromversion="1.1.0">
+		<instruction type="file"/>
+	</instructions>
 
 	<instructions type="install">
 		<instruction type="eventListener"/>
