@@ -3,13 +3,7 @@
 namespace wcf\action;
 
 use Laminas\Diactoros\Response\JsonResponse;
-use wcf\data\user\minecraft\MinecraftUserList;
-use wcf\data\user\User;
 use wcf\data\user\UserProfile;
-use wcf\system\exception\IllegalLinkException;
-use wcf\system\exception\PermissionDeniedException;
-use wcf\system\exception\UserInputException;
-use wcf\system\flood\FloodControl;
 use wcf\system\user\jcoins\UserJCoinsStatementHandler;
 use wcf\util\MinecraftLinkerUtil;
 use wcf\util\StringUtil;
