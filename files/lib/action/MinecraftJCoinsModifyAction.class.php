@@ -30,6 +30,10 @@ class MinecraftJCoinsModifyAction extends AbstractMinecraftLinkerAction
     {
         $result = parent::readParameters();
 
+        if ($result !== null) {
+            return $result;
+        }
+
         // validate amount
         if (!array_key_exists('amount', $this->getJSON())) {
             if (ENABLE_DEBUG_MODE) {
