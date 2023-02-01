@@ -21,39 +21,43 @@ class MinecraftJCoinsModifyAction extends AbstractMinecraftLinkerAction
      */
     public $neededModules = ['MINECRAFT_JCOINS_ENABLED', 'MODULE_JCOINS'];
 
-    private int $amount = 0;
+    /**
+     * @inheritDoc
+     */
+    public function validateParameters($parameters, &$response): void
+    {
+        parent::validateParameters($parameters, $response);
+        if ($response instanceof JsonResponse) {
+            return;
+        }
+
+        // validate amount
+        if (!array_key_exists('amount', $parameters)) {
+            if (ENABLE_DEBUG_MODE) {
+                $response = $this->send('Bad Request. \'amount\' not set.', 400);
+            } else {
+                $response = $this->send('Bad Request.', 400);
+            }
+            return;
+        }
+        if (!is_int($parameters['amount'])) {
+            if (ENABLE_DEBUG_MODE) {
+                $response = $this->send('Bad Request. \'amount\' no int.', 400);
+            } else {
+                $response = $this->send('Bad Request.', 400);
+            }
+            return;
+        }
+    }
 
     /**
      * @inheritDoc
      */
-    public function readParameters(): ?JsonResponse
+    public function execute($parameters): JsonResponse
     {
-        $result = parent::readParameters();
-
-        if ($result !== null) {
-            return $result;
-        }
-
-        // validate amount
-        if (!array_key_exists('amount', $this->getJSON())) {
-            if (ENABLE_DEBUG_MODE) {
-                return $this->send('Bad Request. \'amount\' not set.', 400);
-            } else {
-                return $this->send('Bad Request.', 400);
-            }
-        }
-        if (!is_int($this->getData('amount'))) {
-            if (ENABLE_DEBUG_MODE) {
-                return $this->send('Bad Request. \'amount\' no int.', 400);
-            } else {
-                return $this->send('Bad Request.', 400);
-            }
-        }
-        $this->amount = $this->getData('amount');
-
         // check linked
-        $this->user = MinecraftLinkerUtil::getUser($this->uuid);
-        if (!isset($this->user)) {
+        $user = MinecraftLinkerUtil::getUser($parameters['uuid']);
+        if (!isset($user)) {
             if (ENABLE_DEBUG_MODE) {
                 return $this->send('Bad Request. \'uuid\' is not linked.', 400);
             } else {
@@ -61,19 +65,9 @@ class MinecraftJCoinsModifyAction extends AbstractMinecraftLinkerAction
             }
         }
 
-        return $result;
-    }
-
-    /**
-     * @inheritDoc
-     */
-    public function execute(): ?JsonResponse
-    {
-        parent::execute();
-
         // Check if user can earn jcoins
         /** @var UserProfile */
-        $userProfile = new UserProfile($this->user);
+        $userProfile = new UserProfile($user);
         if (!$userProfile->getPermission('user.jcoins.canEarn')) {
             if (ENABLE_DEBUG_MODE) {
                 return $this->send('Bad Request. User can\'t earn jCoins.', 400);
@@ -82,7 +76,7 @@ class MinecraftJCoinsModifyAction extends AbstractMinecraftLinkerAction
             }
         }
 
-        if (!JCOINS_ALLOW_NEGATIVE && ($this->user->jCoinsAmount + $this->amount) < 0) {
+        if (!JCOINS_ALLOW_NEGATIVE && ($user->jCoinsAmount + $parameters['amount']) < 0) {
             if (ENABLE_DEBUG_MODE) {
                 return $this->send('Bad Request. User can\'t go negative.', 400);
             } else {
@@ -90,9 +84,9 @@ class MinecraftJCoinsModifyAction extends AbstractMinecraftLinkerAction
             }
         }
         $parameters = [
-            'amount' => $this->amount
+            'amount' => $parameters['amount']
         ];
-        UserJCoinsStatementHandler::getInstance()->create('de.xxschrandxx.wsc.minecraftJCoins.modify', $this->user, $parameters);
+        UserJCoinsStatementHandler::getInstance()->create('de.xxschrandxx.wsc.minecraftJCoins.modify', $user, $parameters);
         return $this->send();
     }
 }
