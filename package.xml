@@ -26,6 +26,10 @@
 		<excludedpackage version="5.0.0">de.xxschrardxx.wsc.minecraft-linker</excludedpackage>
 	</excludedpackages>
 
+	<instructions type="update" fromversion="1.1.2">
+		<instruction type="file" />
+	</instructions>
+
 	<instructions type="install">
 		<instruction type="eventListener"/>
 		<instruction type="file"/>
